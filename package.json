@@ -1,5 +1,6 @@
 {
   "name": "gameoflife",
+  "homepage" : "https://pg-8.github.io/GameOfLife",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
