@@ -1,70 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Grid from './components/Grid'
+import Buttons from './components/Buttons'
 import './index.css'
-
-class Box extends React.Component {
-	selectBox = () => {
-		this.props.selectBox(this.props.row, this.props.column)
-	}
-
-	render() {
-		return (
-			<div
-				className={this.props.boxClass}
-				id={this.props.id}
-				onClick={this.selectBox}
-			/>
-		)
-	}
-}
-
-class Grid extends React.Component {
-	render() {
-		const width = this.props.columns * 16
-		let rowsArray = []
-		let boxClass = ''
-
-		//following loop could be done with map() method
-
-		for (let i = 0; i < this.props.rows; i++) {
-			for (let j = 0; j < this.props.columns; j++) {
-				let boxId = i + '_' + j
-				boxClass = this.props.gridFull[i][j] ? 'box on' : 'box off'
-				rowsArray.push(
-					<Box
-						boxClass={boxClass}
-						key={boxId}
-						boxId={boxId}
-						row={i}
-						column={j}
-						selectBox={this.props.selectBox}
-					/>
-				)
-			}
-		}
-
-		return (
-			<div className="grid" style={{ width: width }}>
-				{rowsArray}
-			</div>
-		)
-	}
-}
-
-class Buttons extends React.Component {
-	render() {
-		return (
-			<div className="center">
-				<button onClick={this.props.playButton}>Play</button>
-				<button onClick={this.props.pauseButton}>Pause</button>
-				<button onClick={this.props.clearButton}>Clear</button>
-				<button onClick={this.props.slowButton}>Slow</button>
-				<button onClick={this.props.fastButton}>Fast</button>
-				<button onClick={this.props.seedButton}>Seed</button>
-			</div>
-		)
-	}
-}
 
 class Main extends React.Component {
 	constructor() {
@@ -164,10 +102,6 @@ class Main extends React.Component {
 		})
 	}
 
-	componentDidMount() {
-		// Here anything which should run after the component mounts
-	}
-
 	render() {
 		return (
 			<div className="center">
@@ -184,7 +118,7 @@ class Main extends React.Component {
 							Check out some cool patterns to experiment with on{' '}
 							<a
 								href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns"
-								target="_blank"
+								target="_blank" rel="noopener noreferrer"
 							>
 								Conway's Game of Life - Wikipedia article
 							</a>
