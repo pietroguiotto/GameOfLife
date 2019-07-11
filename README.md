@@ -6,12 +6,8 @@
 
 **ISSUES TO FIX:**
 
-- ~Standardize readme file as other repos~
-- ~Clean up create-react-app defaults~
-- ~Clean up src folder by removing unused filed~
+- None
 
 **UP NEXT:**
 
-- Publish on github pages (add link to description of repo)
-- ~Create components folder~
-- ~Move individual components to their own script file and re-establish relation with app's main~
+- Publish a demo version online
