@@ -6,7 +6,7 @@
 
 **ISSUES TO FIX:**
 
-- None
+- Address vulnerability related to lodash
 
 **UP NEXT:**
 
