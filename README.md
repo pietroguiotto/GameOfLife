@@ -7,7 +7,3 @@
 **ISSUES TO FIX:**
 
 - Address vulnerability related to lodash
-
-**UP NEXT:**
-
-- Publish a demo version online
