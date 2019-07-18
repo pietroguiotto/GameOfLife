@@ -4,6 +4,10 @@
 
 ![](https://raw.githubusercontent.com/PG-8/GameOfLife/master/GameOfLifeScreen.png)
 
+**TODO:**
+
+- none
+
 **ISSUES TO FIX:**
 
-- Address vulnerability related to lodash
+- none
